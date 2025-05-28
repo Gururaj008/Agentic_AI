@@ -182,21 +182,29 @@ st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Agdasima');
 
+    /* Black (semi-transparent) box behind the title */
+    .custom-title-box {
+        background-color: rgba(0, 0, 0, 0.8) !important;
+        display: inline-block !important;
+        padding: 10px 20px !important;
+        border-radius: 5px !important;
+    }
+
+    /* Title text styling */
     .custom-title {
         font-family: 'Agdasima', sans-serif !important;
-        font-size: 70px !important;      /* Force the size */
-        color: cyan !important;          /* Force the color */
-        font-weight: bold !important;    /* Ensure bold */
-        font-style: normal !important;   /* Ensure normal style */
-        text-align: center !important;   /* Center‐align */
-        margin: 0 !important;            /* Remove any default margins */
-        padding: 0 !important;           /* Remove any default padding */
+        font-size: 50px !important;      /* Adjust to your preferred size */
+        color: cyan !important;          /* Adjust to any valid CSS color */
+        font-weight: bold !important;
+        margin: 0 !important;
     }
     </style>
 
-    <p class="custom-title">
-        Maverick's Agentic AI for IntelliTune Garage
-    </p>
+    <div class="custom-title-box">
+        <p class="custom-title">
+            Maverick's Agentic AI for IntelliTune Garage
+        </p>
+    </div>
 """, unsafe_allow_html=True)
 
 
