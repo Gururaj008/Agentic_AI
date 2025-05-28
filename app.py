@@ -183,7 +183,7 @@ st.set_page_config(layout="wide")
         @import url('https://fonts.googleapis.com/css2?family=Agdasima');
         .custom-text { font-family: 'Agdasima', sans-serif; font-size: 70px; color: cyan; }
         </style>
-        <p class="custom-text">SmartText Insight</p>
+        <p class="custom-text">Maverick's Agentic AI for IntelliTune Garage</p>
     """, unsafe_allow_html=True)
 
 def set_bg_from_local(image_file):
@@ -265,14 +265,7 @@ def set_bg_from_local(image_file):
 
 set_bg_from_local(BACKGROUND_IMAGE_PATH)
 
-st.markdown(
-    """
-    <div class="title-container">
-        <p class="title-text">Maverick's IntelliTune Garage AI</p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+
 
 if "agent_executor" not in st.session_state:
     st.session_state.agent_executor, st.session_state.memory = get_agent_executor()
