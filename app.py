@@ -178,7 +178,7 @@ def get_agent_executor():
 
 # --- Streamlit UI ---
 st.set_page_config(layout="wide")
-    st.markdown("""
+st.markdown("""
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Agdasima');
         .custom-text { font-family: 'Agdasima', sans-serif; font-size: 70px; color: cyan; }
