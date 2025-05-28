@@ -311,8 +311,7 @@ def initialize_chat():
     if not st.session_state.session_active:
         st.session_state.messages = []
         st.session_state.memory.clear()
-        st.session_state.messages.append({"role": "assistant",
-                                          "content": "Hello! I am your AI assistant for Maverick's IntelliTune Garage."})
+        #st.session_state.messages.append({"role": "assistant","content": "Hello! I am your AI assistant for Maverick's IntelliTune Garage."})
         try:
             with st.spinner("AgenticAI is starting up..."):
                 initial_greeting_response = st.session_state.agent_executor.invoke(
