@@ -182,24 +182,23 @@ st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Agdasima');
 
-    /* Make sure the CSS selector matches the class you assign below */
     .custom-title {
-        font-family: 'Agdasima', sans-serif;
-        font-size: 70px;      /* adjust the number to make it larger/smaller */
-        color: cyan;          /* change to any valid CSS color (e.g. “red”, “#FF0000”) */
-        font-weight: bold;    /* you can use normal, bold, or numeric (100–900) */
-        font-style: normal;   /* or italic, oblique */
-        text-align: center;   /* center/left/right */
-        margin: 0;            /* optionally remove default margins */
-        padding: 0;           /* optionally remove default padding */
+        font-family: 'Agdasima', sans-serif !important;
+        font-size: 70px !important;      /* Force the size */
+        color: cyan !important;          /* Force the color */
+        font-weight: bold !important;    /* Ensure bold */
+        font-style: normal !important;   /* Ensure normal style */
+        text-align: center !important;   /* Center‐align */
+        margin: 0 !important;            /* Remove any default margins */
+        padding: 0 !important;           /* Remove any default padding */
     }
     </style>
 
-    <!-- In Streamlit, you must use the same class name as defined in your CSS -->
     <p class="custom-title">
         Maverick's Agentic AI for IntelliTune Garage
     </p>
 """, unsafe_allow_html=True)
+
 
 
 
