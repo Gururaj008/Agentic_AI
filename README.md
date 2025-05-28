@@ -1,4 +1,3 @@
-st.markdown("""
 <h1>🚗 Maverick’s IntelliTune Garage AI</h1>
 <p>Welcome to Maverick’s IntelliTune Garage AI, a Streamlit-based conversational assistant powered by Google Gemini and LangChain tools...</p>
 
