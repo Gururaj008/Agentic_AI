@@ -12,7 +12,7 @@ import base64
 # --- Configuration (Replace with your actuals if not using environment variables) ---
 API_KEY = st.secrets["API_KEY"]
 MODEL_NAME = st.secrets["MODEL_NAME"]
-BACKGROUND_IMAGE_PATH = "garage.jpeg"  # Create this image file
+BACKGROUND_IMAGE_PATH = "garage.png"  # Create this image file
 
 
 # --- Initialize Google Generative AI ---
