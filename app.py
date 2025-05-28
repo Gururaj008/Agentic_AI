@@ -10,9 +10,9 @@ import google.generativeai as genai
 import base64
 
 # --- Configuration (Replace with your actuals if not using environment variables) ---
-API_KEY = "AIzaSyBvD0GfkBOcms4j1pwZzDCYdxaVM5Wg01s"
-MODEL_NAME = "gemini-2.5-flash-preview-05-20"
-BACKGROUND_IMAGE_PATH = r"C:\Users\Maverick\Downloads\garage.jpeg"  # Create this image file
+API_KEY = st.secrets["API_KEY"]
+MODEL_NAME = st.secrets["MODEL_NAME"]
+BACKGROUND_IMAGE_PATH = "garage.jpeg"  # Create this image file
 
 
 # --- Initialize Google Generative AI ---
