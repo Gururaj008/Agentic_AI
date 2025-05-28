@@ -152,7 +152,7 @@ def contact_info(_input: str = "") -> str:
 tools = [greet_tool, search_engine_problems, schedule_service, assess_damage, routine_service, contact_info]
 
 # --- Agent and Memory Setup ---
-system_prompt_text = """You are Maverick AI, a helpful and friendly AI service assistant for Maverick’s IntelliTune Garage.
+system_prompt_text = """You are Maverick Agentic AI, a helpful and friendly AI service assistant for Maverick’s IntelliTune Garage.
 You have access to a variety of tools to help users with their vehicle inquiries.
 Based on the user's message, decide if one of your tools is appropriate to use.
 If you use a tool, its output will be your response.
@@ -210,7 +210,7 @@ st.markdown("""
     <div class="custom-title-container">
         <div class="custom-title-box">
             <p class="custom-title">
-                Maverick's Agentic AI for IntelliTune Garage
+                Agentic AI for Maverick's IntelliTune Garage
             </p>
         </div>
     </div>
@@ -312,9 +312,9 @@ def initialize_chat():
         st.session_state.messages = []
         st.session_state.memory.clear()
         st.session_state.messages.append({"role": "assistant",
-                                          "content": "Hello! I am Maverick, your AI assistant for Maverick's IntelliTune Garage."})
+                                          "content": "Hello! I am your AI assistant for Maverick's IntelliTune Garage."})
         try:
-            with st.spinner("Maverick is starting up..."):
+            with st.spinner("AgenticAI is starting up..."):
                 initial_greeting_response = st.session_state.agent_executor.invoke(
                     {"input": "User has just started the chat, greet them."})
             assistant_response = initial_greeting_response.get("output", "Sorry, I couldn't start up correctly.")
@@ -340,7 +340,7 @@ if prompt := st.chat_input("How can I help with your vehicle today?"):
         st.markdown(prompt)
 
     with st.chat_message("assistant"):
-        with st.spinner("Maverick is thinking..."):
+        with st.spinner("AgenticAI is thinking..."):
             try:
                 if prompt.lower() in {"exit", "quit"}:
                     response_content = "Goodbye! We look forward to helping you again."
