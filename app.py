@@ -178,14 +178,22 @@ def get_agent_executor():
 
 # --- Streamlit UI ---
 st.set_page_config(layout="wide")
+```python
 st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Agdasima');
 
+    /* Container to center the title box */
+    .custom-title-container {
+        text-align: center !important;
+        width: 100% !important;
+        margin-top: 20px !important;  /* optional spacing from top */
+    }
+
     /* Black (semi-transparent) box behind the title */
     .custom-title-box {
-        background-color: rgba(0, 0, 0, 0.8) !important;
         display: inline-block !important;
+        background-color: rgba(0, 0, 0, 0.8) !important;
         padding: 10px 20px !important;
         border-radius: 5px !important;
     }
@@ -195,17 +203,20 @@ st.markdown("""
         font-family: 'Agdasima', sans-serif !important;
         font-size: 50px !important;      /* Adjust to your preferred size */
         color: cyan !important;          /* Adjust to any valid CSS color */
-        font-weight: bold !important;
+        #font-weight: bold !important;
         margin: 0 !important;
     }
     </style>
 
-    <div class="custom-title-box">
-        <p class="custom-title">
-            Maverick's Agentic AI for IntelliTune Garage
-        </p>
+    <div class="custom-title-container">
+        <div class="custom-title-box">
+            <p class="custom-title">
+                Maverick's Agentic AI for IntelliTune Garage
+            </p>
+        </div>
     </div>
 """, unsafe_allow_html=True)
+```
 
 
 
