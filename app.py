@@ -177,8 +177,14 @@ def get_agent_executor():
 
 
 # --- Streamlit UI ---
-st.set_page_config(page_title="Maverick's IntelliTune Garage", layout="wide")
-
+st.set_page_config(layout="wide")
+    st.markdown("""
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Agdasima');
+        .custom-text { font-family: 'Agdasima', sans-serif; font-size: 70px; color: cyan; }
+        </style>
+        <p class="custom-text">SmartText Insight</p>
+    """, unsafe_allow_html=True)
 
 def set_bg_from_local(image_file):
     if os.path.exists(image_file):
