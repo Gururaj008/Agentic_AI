@@ -178,7 +178,6 @@ def get_agent_executor():
 
 # --- Streamlit UI ---
 st.set_page_config(layout="wide")
-```python
 st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Agdasima');
@@ -216,7 +215,7 @@ st.markdown("""
         </div>
     </div>
 """, unsafe_allow_html=True)
-```
+
 
 
 
