@@ -179,12 +179,23 @@ def get_agent_executor():
 # --- Streamlit UI ---
 st.set_page_config(layout="wide")
 st.markdown("""
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Agdasima');
-        .custom-text { font-family: 'Agdasima', sans-serif; font-size: 70px; color: cyan; }
-        </style>
-        <p class="custom-text-12">Maverick's Agentic AI for IntelliTune Garage</p>
-    """, unsafe_allow_html=True)
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Agdasima');
+
+    .title-text {
+        font-family: 'Agdasima', sans-serif;
+        font-size: 70px;     /* change this number to adjust the size */
+        color: cyan;         /* change to any valid CSS color */
+        font-weight: bold;   /* you can use normal, bold, 100–900, etc. */
+        font-style: normal;  /* or italic, oblique */
+        text-align: center;  /* or left / right */
+    }
+    </style>
+    <p class="title-text">
+        Maverick's Agentic AI for IntelliTune Garage
+    </p>
+""", unsafe_allow_html=True)
+
 
 def set_bg_from_local(image_file):
     if os.path.exists(image_file):
