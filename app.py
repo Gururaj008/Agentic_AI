@@ -183,7 +183,7 @@ st.markdown("""
         @import url('https://fonts.googleapis.com/css2?family=Agdasima');
         .custom-text { font-family: 'Agdasima', sans-serif; font-size: 70px; color: cyan; }
         </style>
-        <p class="custom-text">Maverick's Agentic AI for IntelliTune Garage</p>
+        <p class="custom-text-10">Maverick's Agentic AI for IntelliTune Garage</p>
     """, unsafe_allow_html=True)
 
 def set_bg_from_local(image_file):
