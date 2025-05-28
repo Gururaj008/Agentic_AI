@@ -141,7 +141,7 @@ def contact_info(_input: str = "") -> str:
     address = """
     📍 Maverick’s IntelliTune Garage, Hesaraghatta Main Road, Bengaluru  \n
     🕙 10 AM – 6 PM (Weekdays)  \n
-    📞 +91 98765 43210  \n
+    📞 +91 98765 00000  \n
     🌐 www.intellitune.com  \n
     ✉️ intellitune@tuning.com  \n
     Please contact us for appointments or further information
