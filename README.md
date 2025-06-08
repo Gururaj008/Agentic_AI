@@ -39,11 +39,10 @@
   <li>🧠 LangChain – Framework to build agentic LLM apps</li>
   <li>🧠 Google Gemini 2.5 – LLM used for chat intelligence</li>
   <li>📊 Streamlit – UI framework</li>
-
-  
   <li>🧩 LangChain Tools – Specialized modules for garage queries</li>
   <li>🔁 ConversationBufferMemory – Persistent chat memory</li>
   <li>🎨 Custom CSS – Themed interface</li>
 </ul>
-<h2> The app is available online at : https://gururaj-h-c-agentic-ai-demo.streamlit.app/ </h2> 
-""", unsafe_allow_html=True)
+
+<h2>🌐 Live Demo</h2>
+<p>The app is available online here: <a href="https://gururaj-h-c-agentic-ai-demo.streamlit.app/" target="_blank">https://gururaj-h-c-agentic-ai-demo.streamlit.app/</a></p>
