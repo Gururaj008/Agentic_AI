@@ -45,5 +45,5 @@
   <li>🔁 ConversationBufferMemory – Persistent chat memory</li>
   <li>🎨 Custom CSS – Themed interface</li>
 </ul>
-<h2> The app is available online at </h2> : https://gururaj-h-c-agentic-ai-demo.streamlit.app/
+<h2> The app is available online at : https://gururaj-h-c-agentic-ai-demo.streamlit.app/ </h2> 
 """, unsafe_allow_html=True)
