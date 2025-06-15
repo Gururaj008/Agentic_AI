@@ -12,7 +12,8 @@ import base64
 import time
 
 # --- Configuration ---
-# Load all API keys from secrets into a list
+# THIS SECTION REPLACES THE OLD `API_KEY = st.secrets["API_KEY"]`
+# It safely loads all numbered API keys from your secrets.
 API_KEYS = [
     st.secrets.get("API_KEY_01"),
     st.secrets.get("API_KEY_02"),
